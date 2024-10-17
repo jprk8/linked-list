@@ -1,4 +1,3 @@
-import { Node } from './node.mjs';
 export { LinkedList };
 
 class LinkedList {
@@ -139,5 +138,12 @@ class LinkedList {
         }
 
         cur.nextNode = cur.nextNode.nextNode;
+    }
+}
+
+class Node {
+    constructor(value = null, nextNode = null) {
+        this.value = value;
+        this.nextNode = nextNode;
     }
 }
