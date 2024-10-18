@@ -138,6 +138,11 @@ class LinkedList {
         }
 
         cur.nextNode = cur.nextNode.nextNode;
+
+        // Set the tail back to head when only 1 item is left
+        if (this.head.nextNode === null) {
+            this.tail = this.head;
+        }
     }
 }
 
